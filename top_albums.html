@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #808080;
+  font-family: courier;
+  padding: 30px;
+  text-align: center;
+  font-size: 5vw;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 1100px;
+  background: #000000;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  font-family: verdana;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  height: 1100px;
+  background-color: #334d4d;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #999966;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+a:link {
+	color: white;
+}
+
+a:hover {
+	color: red;
+}
+
+a:visited {
+	color: white;
+}
+
+img {
+	max-height: 100%;
+    max-width: 100%;
+}
+
+p {
+	color: white;
+}
+
+ol {
+	color: white;
+    text-align: left;
+}
+
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>🅵🅾🅾 🅵🅸🅶🅷🆃🅴🆁🆂</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Home Page</a></li>
+      <li><a href="#">About the Band</a></li>
+      <li><a href="#">Top Albums</a></li>
+      <li><a href="#">Media</a></li>
+      <li><a href="#">Tour</a></li>
+    </ul>
+    <img src="https://27i1vg4d30zd8sfa41nrhds1-wpengine.netdna-ssl.com/wp-content/uploads/2014/06/Foo-Fighters51.jpg" height=130 width=130 />
+  </nav>
+  
+  <article>
+ 	<h1 style="font-size:50px;color:white;border:10px solid black;">Top Albums</h1>
+    
+    <table align="center">
+    
+    <tr>
+    <td><th style="color:white;">The Colour and the Shape</th></td>
+    <td><img src="https://e-cdns-images.dzcdn.net/images/cover/780023e1177b5ea38fcbd557cf57cc8a/500x500.jpg" height="250" width="250"/></td>
+    <td>
+    	<ol>
+        <li>Doll</li>
+        <li>Monkey Wrench</li>
+        <li>Hey, Johnny Park!</li>
+        <li>My Poor Brain</li>
+        <li>Wind Up</li>
+        <li>Up In Arms</li>
+        <li>My Hero</li>
+        <li>See You</li>
+        <li>Enough Space</li>
+        <li>February Stars</li>
+        <li>Everlong</li>
+        <li>Walking After You</li>
+        <li>New Way Home</li>
+        </ol>
+    </td>
+    </tr>
+    
+    <tr>
+    <td><th style="color:white;">There Is Nothing Left to Lose</th></td>
+    <td><img src="https://upload.wikimedia.org/wikipedia/en/8/8b/Foo_Fighters_-_There_Is_Nothing_Left_to_Lose.jpg" height="250" width="250"/></td>
+    <td>
+    	<ol>
+        <li>Stacked Actors</li>
+        <li>Breakout</li>
+        <li>Learn to Fly</li>
+        <li>Gimme Stitches</li>
+        <li>Generator</li>
+        <li>Aurora</li>
+        <li>Live-In Skin</li>
+        <li>Next Year</li>
+        <li>Headwires</li>
+        <li>Ain't It The Life</li>
+        <li>M.I.A.</li>
+        </ol>
+    </td>
+    </tr>
+
+	
+    <tr>
+    <td><th style="color:white;">Concrete and Gold</th></td>
+    <td><img src="https://img.discogs.com/Ii2HSgKiTy4972OedtyOcCL2ndI=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-11952926-1525369740-5219.jpeg.jpg" height="250" width="250"/></td>
+    <td>
+    	<ol>
+        <li>T-Shirt</li>
+        <li>Run</li>
+        <li>Make It Right</li>
+        <li>The Sky Is A Neighborhood</li>
+        <li>La Dee Da</li>
+        <li>Dirty Water</li>
+        <li>Arrows</li>
+        <li>Happy Ever After</li>
+        <li>Sunday Rain</li>
+        <li>The Line</li>
+        <li>Concrete and Gold</li>
+        </ol>
+    </td>
+    </tr>
+    
+    </table>
+  </article>
+  
+</section>
+
+<footer>
+  <i>Copyright &copy; 2020 Justin Joiner. All Rights Reserved.</i>
+</footer>
+
+</body>
+</html>
